@@ -1,0 +1,461 @@
+// fonts
+$headingFontFamily: 'Raleway', Helvetica, Arial, sans-serif;
+$standardFontFamily: Helvetica, Arial, sans-serif;
+ 
+//colours
+$primaryColour:#16203B; // almost black
+$secondaryColour:#1996AC; //blue
+$secondaryColour2:#B92D6C; //red
+$secondaryColour3:#13C3AD; //green
+$secondaryColour4:#AD9B18; //yellow
+$emphasisColour:#126A79; //dkr blue
+$background1:#f4f4f5; // grey
+$background2:#eee; //lt grey 
+ 
+
+// Social icons
+$facebook:#3B5998;
+$linkedin:#007BB6;
+$pinterest:#CB2027;
+$skype:#02B4EB;
+$twitter:#2CAAE1;
+$tumblr:#304E6C;
+$youtube:#B10503;
+$google-plus:#DD4B39;
+$github:#000000;
+
+/* front end pages */
+
+/* fonts */ 
+
+body {
+	font-family: $standardFontFamily;
+	color:#666;
+}
+h1, h2, h3, h4, h4, h5, h6 {
+    font-family: $headingFontFamily;
+    letter-spacing: 1px;
+	margin-top:20px;
+}
+h1 {font-size: 24px;color:$secondaryColour;}
+h2 {font-size: 20px; font-weight:bold;}
+h3 {font-size: 18px; font-weight:bold; color:$secondaryColour3; }
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;} 
+p {font-size: 14px;}
+
+.homepage {
+	h1 .strapline, h2, h4, h5, h6 {
+	color: $secondaryColour;
+	}
+}
+.subpage h1 {
+	padding-bottom:10px;
+	border-bottom:1px solid $secondaryColour;
+	display:inline-block;
+}
+
+/* backgrounds */
+
+#slide2.wrapper {
+	background-color:$background1;
+}
+#slide3.wrapper {
+	background-color:$background2;
+}
+#slide4.wrapper {
+	background-color:$secondaryColour3;
+}
+.subpage .wrapper {
+	background-color:$background1;
+}
+.casestudies {
+	text-align:center;
+	.fa {
+		font-size:60px;}
+}
+
+
+/* misc */
+
+.marginTop {
+    margin-top:20px;
+}
+.marginBottom {
+    margin-bottom:20px;
+}
+.picleft img {
+    float:left; 
+    margin-right:20px;
+}
+.picright img {
+    float:right; 
+    margin-left:20px;
+}
+.clearfix {
+    clear:both;
+}
+.center {
+	text-align:center;
+}
+section {
+	padding:20px 0;
+}
+.content {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#pageContent li {
+	list-style:none;
+}
+#pageContent li:before {
+	content:'\f105';
+	font-family:fontawesome;
+	margin-left:-38px;
+	padding-right:5px;
+}
+
+/* offset scroll anchors */
+
+a.anchor{display: block; position: relative; top: -20px; visibility: hidden;}
+
+/* header */
+
+.header {
+	text-align:center;
+}
+.sitelogo img{
+    padding-top:160px;
+}
+.strapline h1 {
+	margin-top:20px;
+	color: $secondaryColour;
+	font-size: 24px;
+}
+.quote {
+	margin-top:50px;
+	color:white;
+	font-style:italic;
+	font-size:20px;
+}
+.scrolldown  {
+	padding-top:10px;
+	font-size:40px;
+	color: $secondaryColour;
+}
+.scrolldown  {
+	a {color: $secondaryColour;}
+	a:hover {color: white;}
+}
+.homepage, .subpage {
+	background-color:$primaryColour;
+	/*  removed when parallax bg added 
+	background-image: url("../img/bg.png");
+	background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+	background-size:cover; */
+}
+#headersubpage {
+	position:relative;
+	height:150px;
+}
+#headersubpage img.logo{
+	position:absolute;
+	width:200px;
+}
+
+
+/* wraps */
+
+.prefooterwrap {
+    background-color: $primaryColour;
+}
+.footerwrap {
+    background-color: white;
+}
+
+/* menu */
+
+.navbar {
+    margin-bottom:0;
+	background:none;
+    border: none;
+	border-radius:0;
+	width:100%;
+	color:white;
+}
+.navbar-default .navbar-nav>.active>a {
+    background-color: $secondaryColour;
+    color:white;
+} 
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	background-color: $primaryColour;
+    color:white;
+} 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: $secondaryColour;
+    color:white;
+} 
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, 
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus{
+    background-color: $secondaryColour;
+    color:white;
+	z-index:9999;
+} 
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+.navbar.scrolled {
+    visibility: hidden;
+}
+.navbar-default .navbar-nav>li>a {
+	color:white;
+	background-color: $primaryColour;
+	}
+ .navbar-default .navbar-nav>.open>a {
+	background-color: $primaryColour;
+}
+.dropdown-menu {
+	background-color: $primaryColour;
+	}
+.navbar.expanded {
+	overflow:visible;
+}
+.navbar-nav {
+	margin-top:0;
+}
+.dropdown-menu .divider {
+	margin:0;
+}
+nav.navbar.navbar-default {
+	background-color: $primaryColour;
+}
+
+
+/* case study boxes */
+.casestudyBox {
+	background-color:white;
+} 
+.casestudyBox p {
+	padding:20px;
+	height:160px;
+	overflow:hidden;
+} 
+.casestudyTitle {
+	padding:20px;
+	color:white;
+	height:160px;
+	h3 {color:white;}
+}
+.box1 {background-color:$secondaryColour;}
+.box2 {background-color:$secondaryColour2;}
+.box3 {background-color:$secondaryColour3;}
+.box4 {background-color:$secondaryColour4;}
+
+/* about me */
+.circleImg {
+	margin:20px auto;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(../img/roger.jpg) no-repeat;
+	}
+#slide4, #slide4 h2 {
+	color:white;
+	}	
+
+	
+/* footer */
+
+#prefooter {
+    color:white;
+    //height:42px;
+}
+#footer h4, #sidebar H4 {
+    font-size: 20px;
+	color: $secondaryColour;
+	font-weight:bold;
+}
+#footer h5 {
+	color: $secondaryColour;
+	font-weight:bold;
+	margin-top:30px;
+}
+.copyright { 
+	margin-top:40px;
+}
+
+.designedBy {background-image: url(../img/designedbysprite.jpg);
+	background-position:0 0;
+	width:89px;
+	height:29px;
+	float:right;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	margin-top:30px;
+}
+.designedBy:hover{background-image: url(../img/designedbysprite.jpg);
+	background-position:0 -29px;
+}
+
+/* site social icons */
+#social-links {
+    margin-left:-37px;
+}
+#social-links {
+    h2 {
+    position: absolute;
+    margin-left: -9999px; 
+    }
+    li {
+        margin-right:10px;
+        margin-top:20px;
+		list-style:none;
+		display:inline;
+    }
+    li a {
+        color: #fff;
+        overflow: hidden; 
+    }
+	 li a:hover {
+        text-decoration:none;	
+    }
+    .fa {
+        font-size: 1.4em;
+    }
+    .fa-twitter {
+        color:$twitter;
+    }
+    .fa-facebook {
+        color:$facebook;
+    }
+    .fa-linkedin {
+        color:$linkedin;
+    }
+    .fa:hover {
+        color: $secondaryColour;	
+    }
+}
+
+/* partner logos */
+.affiliationlogo img{
+	float:left;
+	height:100px;
+	padding:20px 40px 0 0;
+}
+/*
+#sidebar .affiliationlogo img{
+	float:left;
+	height:80px;
+	padding:20px 100px 0 0;
+}
+.subpage .affiliationlogos {display:none;} 
+*/
+
+
+/* easy testimonals */
+
+.testimonial {
+	background-color:$secondaryColour3;
+	margin-top:50px;
+}
+.testimonial .widgettitle {
+	display:none;
+}
+.testimonial div {
+	margin:20px 5px;
+}
+.testimonial .testimonial_body p {
+	font-style:italic;
+	font-size:17px;
+	color:white;
+}
+.testimonial .testimonial_author {
+	font-size:14px;
+	color:#666;
+}
+
+
+
+/* buttons */
+.btn {
+		background-color:$secondaryColour;
+		color: white;
+		border-radius:0;
+	&:hover {
+		background-color: $emphasisColour;
+		}
+	.fa {
+		padding-left:10px;
+		}
+	a {
+		color: white;
+		}
+	a:hover {
+		text-decoration:none;
+		}
+}
+
+
+/* forms - not used*/
+
+.form-group label, .ui-widget input, .ui-widget select  {
+    font-size: 14px !important;    
+    font-family: $standardFontFamily !important;
+}
+.form-group label {
+    background-color: $primaryColour;
+    padding:6px;
+    color:white;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.form-group .control-label {   
+    text-align:left;
+    padding:7px;
+}
+.form-group input, .form-group select {
+    background: none; 
+    border:1px solid $primaryColour;
+    border-radius: 0;
+}
+.form-horizontal .form-group {
+    margin-left: -45px;
+}
+
+/* responsive adjustments */
+
+/* small phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.navbar-header {	
+	background-color: $primaryColour;
+	}
+} 
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	#headersubpage img.logo {
+	top:10px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
